@@ -23,6 +23,11 @@ function dealWith(inPath, up) {
   if (!up) {
     return inPath;
   }
+
+  if (typeof up === 'function') {
+    return up(inPath);
+  }
+
   if (up === true) {
     return path.basename(inPath);
   }

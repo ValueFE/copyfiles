@@ -4,4 +4,5 @@ node_modules
 coverage
 Thumbs.db
 .bak
-.tmp
+.tmp.idea/
+.idea/
